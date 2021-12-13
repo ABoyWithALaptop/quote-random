@@ -1,0 +1,113 @@
+:root {
+  --1: #264653;
+  --2: #2a9d8f;
+  --3: #c84b31;
+  --4: #f4a261;
+  --5: #33a82f;
+}
+
+#body {
+  background-color: #61dafb;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Frame {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+#quote-box {
+  padding: 40px 50px;
+  width: 450px;
+}
+
+.quote-text {
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+.quote-content {
+  text-align: center;
+  /* opacity: 0.7; */
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.37);
+}
+
+.quote-author {
+  padding-top: 20px;
+  text-align: right;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.fa-quote-left::before {
+  content: "\f10d";
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+
+.clearfloat:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+#tweet-quote {
+  width: 40px;
+  height: 38px;
+  border-radius: 5px;
+}
+.fa-twitter {
+  width: 18px;
+  height: 19px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#new-quote {
+  width: 104px;
+  height: 40px;
+  padding: 8px 18px;
+  float: right;
+  border: 0;
+  border-radius: 5px;
+}
+
+.fade {
+  animation: fadeOut 2s;
+}
+
+.changeColor {
+  animation: changeColor-keyframes 2s linear;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* @keyframes color-change {
+  0% {
+    color: #61dafb;
+  }
+  100% {
+    color: #fff;
+  }
+} */
